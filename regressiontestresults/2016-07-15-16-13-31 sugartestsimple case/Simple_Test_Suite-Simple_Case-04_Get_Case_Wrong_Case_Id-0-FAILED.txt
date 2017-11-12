@@ -1,0 +1,50 @@
+Status: FAILED
+Time Taken: 980
+Size: 116
+Timestamp: Fri Jul 15 16:13:39 ICT 2016
+TestStep: 04. Get Case Wrong Case Id
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code:404 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+StatusCode: 404
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: http://sugarcrm.tsrv.ebuero.de/
+URL: http://sugarcrm.tsrv.ebuero.de/rest/v10/Cases/8c87c772-e43e-90ac-c7d3-575e54fbd28d
+
+---------------- Request ---------------------------
+oauth-token: [df777e24-6504-61ba-93bb-5788a93c1110]
+Host: [sugarcrm.tsrv.ebuero.de]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET http://sugarcrm.tsrv.ebuero.de/rest/v10/Cases/8c87c772-e43e-90ac-c7d3-575e54fbd28d HTTP/1.1
+Accept-Encoding: gzip,deflate
+oauth-token: df777e24-6504-61ba-93bb-5788a93c1110
+Host: sugarcrm.tsrv.ebuero.de
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 404 Not Found]
+Content-Length: [116]
+Expires: [Thu, 19 Nov 1981 08:52:00 GMT]
+Set-Cookie: [ROUTEID=.a8c05d0a; path=/]
+Access-Control-Allow-Methods: [POST, GET, UPDATE, OPTIONS]
+Connection: [Keep-Alive]
+Server: [Apache/2.2.22 (Debian)]
+Cache-Control: [no-store]
+Pragma: [no-cache]
+Status: [404 Not Found]
+Access-Control-Allow-Headers: [x-http-method-override, x-gwt-module-base, x-gwt-permutation, origin, content-type, cookie]
+Date: [Fri, 15 Jul 2016 09:13:39 GMT]
+Access-Control-Allow-Origin: [*]
+Keep-Alive: [timeout=5, max=99]
+Via: [1.1 sugarcrm.tsrv.ebuero.de]
+Content-Type: [application/json]
+
+{"error":"not_found","error_message":"Could not find record: 8c87c772-e43e-90ac-c7d3-575e54fbd28d in module: Cases"}

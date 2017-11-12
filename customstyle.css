@@ -1,0 +1,333 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 8, 2016, 11:51:45 AM
+    Author     : kajornjit.songsaen
+*/
+
+@CHARSET "UTF-8";
+body{
+    background-color: #222222;
+
+}
+.news-item{
+    border-bottom: none;
+}
+.container-fluid{
+    width: 1900px;
+}
+#topic{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: center;
+    color: #fff;
+}
+#topic2{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 24pt;
+    text-align: center;
+    color: #000;
+
+}
+#errortopic{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: center;
+    color: #fff;
+}
+#performancetesttopic{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: center;
+    color: #fff;
+}
+#regressiontesttopic{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: center;
+    color: #fff;
+}
+#bugstopic{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: center;
+    color: #fff;
+}
+#helptickettopic{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: center;
+    color: #fff;
+}
+#livetopic{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: center;
+    color: #fff;
+}
+#subtopic{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 20pt;
+    text-align: center;
+    color: #fff;
+}
+#helpitem{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18pt;
+    text-align: center;
+    color: #f4b2aa;
+
+}
+
+#helpitem:hover{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18pt;
+    text-align: center;
+    color: #fff;
+}
+#number{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 96pt;
+    text-align: center;
+    color: #fff;
+}
+#number2{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 96pt;
+    text-align: center;
+    color: #fff;
+}
+#error{
+    background-color: #A4A4A4;
+    width: 47%;
+    height: 300px;
+    margin:100px 0 0 35px;
+
+}
+#errornumber{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 96pt;
+    text-align: center;
+    color: #fff;
+}
+#performancetest{
+    background-color: #A4A4A4;
+    width: 47%;
+    height: 300px;
+    margin: 100px 0 0 20px;
+    cursor: pointer;
+}
+#performancetestnumber{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 96pt;
+    text-align: center;
+    color: #fff;
+}
+#helpticket{
+    background-image: url("../images/bg-helpticket.png");
+    width: 47%;
+    height: 460px;
+    margin:100px 0 0 20px;
+
+}
+#helpticketnumber{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 96pt;
+    text-align: center;
+    color: #fff;
+}
+#highlight{
+    background-color: #fff;
+    height: 50px;
+}
+#highlight2{
+    background-color: #2d2d2d;
+
+    height: 50px;
+
+
+}
+#highlight3{
+    background-color: #fff;
+    height: 50px;
+}
+#alive{
+    background-image: url("../images/bg-alive.png");
+    /*background-color: #eeae32;*/
+    width: 47%;
+    height: 460px;
+    margin:100px 0 0 20px;
+
+}
+#regressiontest{
+    background-color: #A4A4A4;
+    width: 47%;
+    height: 300px;
+    margin:20px 0 0 35px;
+    cursor: pointer;
+}
+
+#regressiontestnumber{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 96pt;
+    text-align: center;
+    color: #fff;
+}
+#bugs{
+    background-color: #A4A4A4;
+    width: 47%;
+    height: 300px;
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+
+}
+
+
+#bugsnumber{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 96pt;
+    text-align: center;
+    color: #fff;
+}
+#alivecount{
+    background-color: #A4A4A4;
+    width: 47%;
+    height: 300px;
+    margin: 20px 0 0 20px;
+    cursor: pointer;
+
+}
+#alivenumber{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 96pt;
+    text-align: center;
+    color: #fff;
+}
+#helpticketcount{
+    background-color: #A4A4A4;
+    width: 47%;
+    height: 300px;
+    margin: 20px 0 0 35px;
+    cursor: pointer;
+}
+
+#message{
+    background-image: url("../images/bg-message.png");
+    width: 96%;
+    height: 460px;
+    margin: 20px 0 0 20px;
+
+}
+#demo1{
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 12pt;
+    text-align: center;
+    color: #000;
+
+
+}
+.panel{
+
+    border-top-left-radius:0em;
+    border-top-right-radius:0em;
+    border-bottom-right-radius:0px;
+    border-bottom-left-radius:0px;
+}
+.panel-default{
+
+    border: none;
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_2.gif) center no-repeat #fff;
+}
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.objblink {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-timing-function: ease-in-out;
+
+    -moz-animation-direction: normal;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: blink;
+    -moz-animation-timing-function: ease-in-out;    
+}

@@ -1,0 +1,152 @@
+15:45:08,695 INFO  [DefaultSoapUICore] initialized soapui-settings from [\\berlin-hq.local\shares\homes$\kajornjit.songsaen\soapui-settings.xml]
+15:45:12,831 INFO  [PluginManager] Adding plugin from [\\berlin-hq.local\shares\homes$\kajornjit.songsaen\.soapuios\plugins\soapui-swagger-plugin-2.2-dist.jar]
+15:45:12,831 INFO  [PluginManager] Adding plugin from [\\berlin-hq.local\shares\homes$\kajornjit.songsaen\.soapuios\plugins\ready-mqtt-plugin-dist.jar]
+15:45:13,369 ERROR [SoapUI] An error occurred [com.eviware.soapui.plugins.auto.factories.AutoDiscoveryMethodFactory], see error log for details
+15:45:13,421 ERROR [SoapUI] An error occurred [com.eviware.soapui.plugins.auto.factories.AutoImportMethodFactory], see error log for details
+15:45:13,627 ERROR [SoapUI] An error occurred [com.eviware.soapui.plugins.auto.factories.AutoDiscoveryMethodFactory], see error log for details
+15:45:13,698 ERROR [SoapUI] An error occurred [com.eviware.soapui.plugins.auto.factories.AutoImportMethodFactory], see error log for details
+15:45:13,779 INFO  [PluginManager] Adding plugin from [\\berlin-hq.local\shares\homes$\kajornjit.songsaen\.soapuios\plugins\ready-uxm-plugin-1.0.1-dist.jar]
+15:45:14,218 ERROR [SoapUI] An error occurred [com.eviware.soapui.plugins.auto.factories.AutoDiscoveryMethodFactory], see error log for details
+15:45:14,295 ERROR [SoapUI] An error occurred [com.eviware.soapui.plugins.auto.factories.AutoImportMethodFactory], see error log for details
+15:45:14,369 INFO  [PluginManager] Adding plugin from [\\berlin-hq.local\shares\homes$\kajornjit.songsaen\.soapuios\plugins\readyapi-swaggerhub-plugin-1.0.jar]
+15:45:14,685 ERROR [SoapUI] An error occurred [com.eviware.soapui.plugins.auto.factories.AutoDiscoveryMethodFactory], see error log for details
+15:45:14,768 ERROR [SoapUI] An error occurred [com.eviware.soapui.plugins.auto.factories.AutoImportMethodFactory], see error log for details
+15:45:14,850 INFO  [PluginManager] 4 plugins loaded in 2020 ms
+15:45:14,850 INFO  [DefaultSoapUICore] All plugins loaded
+SoapUI 5.2.1 TestCase Runner
+15:45:15,507 INFO  [WsdlProject] Loaded project from [file:/D:/Regression%20Test/Project%20Files/SugarTest-Simple%20Case-project.xml]
+15:45:15,511 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [SugarTest Simple Cases]
+15:45:15,512 INFO  [SoapUITestCaseRunner] Running Project [SugarTest Simple Cases], runType = SEQUENTIAL
+15:45:15,520 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Simple Case]
+15:45:15,524 INFO  [SoapUITestCaseRunner] running step [Properties]
+15:45:15,558 INFO  [SoapUITestCaseRunner] running step [01. Login]
+15:45:15,908 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+15:45:15,908 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /rest/v10/oauth2/token HTTP/1.1
+15:45:17,616 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+15:45:17,629 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive for 5000 MILLISECONDS
+15:45:17,692 ERROR [SoapUI] An error occurred [Double slash (//) in path], see error log for details
+15:45:17,792 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+15:45:17,798 INFO  [SoapUITestCaseRunner] running step [02. Get Access Token]
+15:45:18,095 INFO  [SoapUITestCaseRunner] running step [03. Define Case Id]
+15:45:18,107 INFO  [SoapUITestCaseRunner] running step [04. Get Case Wrong Case Id]
+15:45:18,113 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+15:45:18,114 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+15:45:18,114 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /rest/v10/Cases/8c87c772-e43e-90ac-c7d3-575e54fbd28d HTTP/1.1
+15:45:19,112 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 404 Not Found
+15:45:19,113 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive for 5000 MILLISECONDS
+15:45:19,114 ERROR [SoapUI] An error occurred [Double slash (//) in path], see error log for details
+15:45:19,198 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status FAILED
+15:45:19,198 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Response status code:404 is not in acceptable list of status codes
+15:45:19,198 ERROR [SoapUITestCaseRunner] 04. Get Case Wrong Case Id failed, exporting to [D:\Regression Test\Execution\Simple_Test_Suite-Simple_Case-04_Get_Case_Wrong_Case_Id-0-FAILED.txt]
+15:45:19,203 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Simple Case], time taken: 3363ms, status: FAILED
+15:45:19,203 INFO  [SoapUITestCaseRunner] Project [SugarTest Simple Cases] finished with status [FAILED] in 3689ms
+15:45:19,203 ERROR [SoapUITestCaseRunner] java.lang.Exception: Valid HTTP Status Codes in [04. Get Case Wrong Case Id] failed;
+[Response status code:404 is not in acceptable list of status codes]
+Status: FAILED
+Time Taken: 1000
+Size: 116
+Timestamp: Fri Jul 15 15:45:18 ICT 2016
+TestStep: 04. Get Case Wrong Case Id
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code:404 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+StatusCode: 404
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: http://sugarcrm.tsrv.ebuero.de/
+URL: http://sugarcrm.tsrv.ebuero.de/rest/v10/Cases/8c87c772-e43e-90ac-c7d3-575e54fbd28d
+
+---------------- Request ---------------------------
+oauth-token: [2d5610e1-e6d2-811b-d6ec-5788a24dd76e]
+Host: [sugarcrm.tsrv.ebuero.de]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET http://sugarcrm.tsrv.ebuero.de/rest/v10/Cases/8c87c772-e43e-90ac-c7d3-575e54fbd28d HTTP/1.1
+Accept-Encoding: gzip,deflate
+oauth-token: 2d5610e1-e6d2-811b-d6ec-5788a24dd76e
+Host: sugarcrm.tsrv.ebuero.de
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 404 Not Found]
+Content-Length: [116]
+Expires: [Thu, 19 Nov 1981 08:52:00 GMT]
+Set-Cookie: [ROUTEID=.a8c05d0a; path=/]
+Access-Control-Allow-Methods: [POST, GET, UPDATE, OPTIONS]
+Connection: [Keep-Alive]
+Server: [Apache/2.2.22 (Debian)]
+Cache-Control: [no-store]
+Pragma: [no-cache]
+Status: [404 Not Found]
+Access-Control-Allow-Headers: [x-http-method-override, x-gwt-module-base, x-gwt-permutation, origin, content-type, cookie]
+Date: [Fri, 15 Jul 2016 08:45:18 GMT]
+Access-Control-Allow-Origin: [*]
+Keep-Alive: [timeout=5, max=99]
+Via: [1.1 sugarcrm.tsrv.ebuero.de]
+Content-Type: [application/json]
+
+{"error":"not_found","error_message":"Could not find record: 8c87c772-e43e-90ac-c7d3-575e54fbd28d in module: Cases"}
+
+15:45:19,203 ERROR [SoapUI] An error occurred [Valid HTTP Status Codes in [04. Get Case Wrong Case Id] failed;
+[Response status code:404 is not in acceptable list of status codes]
+Status: FAILED
+Time Taken: 1000
+Size: 116
+Timestamp: Fri Jul 15 15:45:18 ICT 2016
+TestStep: 04. Get Case Wrong Case Id
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code:404 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+StatusCode: 404
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: http://sugarcrm.tsrv.ebuero.de/
+URL: http://sugarcrm.tsrv.ebuero.de/rest/v10/Cases/8c87c772-e43e-90ac-c7d3-575e54fbd28d
+
+---------------- Request ---------------------------
+oauth-token: [2d5610e1-e6d2-811b-d6ec-5788a24dd76e]
+Host: [sugarcrm.tsrv.ebuero.de]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET http://sugarcrm.tsrv.ebuero.de/rest/v10/Cases/8c87c772-e43e-90ac-c7d3-575e54fbd28d HTTP/1.1
+Accept-Encoding: gzip,deflate
+oauth-token: 2d5610e1-e6d2-811b-d6ec-5788a24dd76e
+Host: sugarcrm.tsrv.ebuero.de
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 404 Not Found]
+Content-Length: [116]
+Expires: [Thu, 19 Nov 1981 08:52:00 GMT]
+Set-Cookie: [ROUTEID=.a8c05d0a; path=/]
+Access-Control-Allow-Methods: [POST, GET, UPDATE, OPTIONS]
+Connection: [Keep-Alive]
+Server: [Apache/2.2.22 (Debian)]
+Cache-Control: [no-store]
+Pragma: [no-cache]
+Status: [404 Not Found]
+Access-Control-Allow-Headers: [x-http-method-override, x-gwt-module-base, x-gwt-permutation, origin, content-type, cookie]
+Date: [Fri, 15 Jul 2016 08:45:18 GMT]
+Access-Control-Allow-Origin: [*]
+Keep-Alive: [timeout=5, max=99]
+Via: [1.1 sugarcrm.tsrv.ebuero.de]
+Content-Type: [application/json]
+
+{"error":"not_found","error_message":"Could not find record: 8c87c772-e43e-90ac-c7d3-575e54fbd28d in module: Cases"}
+], see error log for details
+15:45:19,278 WARN  [Tools] Could not delete temporary directory C:\Users\KAJORN~1.SON\AppData\Local\Temp\ef36e5b5-b063-49d3-9c28-103be6567ce8
+15:45:19,278 WARN  [Tools] Could not delete temporary directory C:\Users\KAJORN~1.SON\AppData\Local\Temp\a6dc8a33-7a5a-4c96-a6ed-5e68da214c02
+15:45:19,283 WARN  [Tools] Could not delete temporary directory C:\Users\KAJORN~1.SON\AppData\Local\Temp\7e869215-11c4-43cc-9092-5b5f9be5c5b0
+15:45:19,283 WARN  [Tools] Could not delete temporary directory C:\Users\KAJORN~1.SON\AppData\Local\Temp\f9271b86-7c6f-447a-aeaf-f49d41c9f23f

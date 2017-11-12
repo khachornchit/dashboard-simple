@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Repeat</title>
+    <meta charset="utf-8" />
+    <script src="angular.min.js"></script>
+    <script src="angular_repeat.js"></script>
+    <link href="tablestyle.css" rel="stylesheet" type="text/css" />      
+</head>
+<body ng-app="myModule" style="font-family:Arial">
+    <div ng-controller="myController">
+        <table>
+            <thead>
+                <tr>First Name</tr>
+                <tr>Last Name</tr>
+                <tr>Gender</tr>
+                <tr>Salary</tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees">
+                    <td>{{employee.firstName}}</td>
+                    <td>{{employee.lastName}}</td> 
+                    <td>{{employee.gender}}</td> 
+                    <td>{{employee.salary}}</td> 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

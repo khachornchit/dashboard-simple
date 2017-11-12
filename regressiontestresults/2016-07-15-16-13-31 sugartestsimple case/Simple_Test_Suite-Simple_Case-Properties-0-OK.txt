@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 22
+Size: 0
+Timestamp: Fri Jul 15 16:13:37 ICT 2016
+TestStep: Properties
+
+----------------- Messages ------------------------------

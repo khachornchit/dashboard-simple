@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 9
+Size: 0
+Timestamp: Fri Jul 15 15:45:18 ICT 2016
+TestStep: 03. Define Case Id
+
+----------------- Messages ------------------------------

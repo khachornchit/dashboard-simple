@@ -1,0 +1,58 @@
+Status: OK
+Time Taken: 2034
+Size: 248
+Timestamp: Fri Jul 15 15:45:15 ICT 2016
+TestStep: 01. Login
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+StatusCode: 200
+Method: POST
+HTTP Version: HTTP/1.1
+Endpoint: http://sugarcrm.tsrv.ebuero.de/
+URL: http://sugarcrm.tsrv.ebuero.de/rest/v10/oauth2/token
+
+---------------- Request ---------------------------
+Host: [sugarcrm.tsrv.ebuero.de]
+Content-Length: [170]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+Content-Type: [application/json]
+
+POST http://sugarcrm.tsrv.ebuero.de/rest/v10/oauth2/token HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 170
+Host: sugarcrm.tsrv.ebuero.de
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{
+   "grant_type":"password",
+   "client_id": "simple",
+   "client_secret": "123456",
+   "username": "sanctuary.episodei",
+   "password": "123456",
+   "platform":"base"
+}
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [248]
+Expires: [Thu, 19 Nov 1981 08:52:00 GMT]
+Set-Cookie: [sugarUUID=98368b5942146e60ecbbeb727839aaa0; expires=Sat, 16-Jul-2016 19:05:17 GMT; path=/; domain=ebuero.de, sugarUUID=98368b5942146e60ecbbeb727839aaa0; expires=Sat, 16-Jul-2016 19:05:17 GMT; path=/; domain=sugarcrm, download_token_base=302f3045-122f-666c-dfa8-5788a2db7d4c; expires=Fri, 29-Jul-2016 08:45:17 GMT; path=/; httponly, ROUTEID=.a8c05d0a; path=/]
+Access-Control-Allow-Methods: [POST, GET, UPDATE, OPTIONS]
+Connection: [Keep-Alive]
+Server: [Apache/2.2.22 (Debian)]
+Cache-Control: [no-store, no-cache, must-revalidate, post-check=0, pre-check=0]
+Pragma: [no-cache]
+Access-Control-Allow-Headers: [x-http-method-override, x-gwt-module-base, x-gwt-permutation, origin, content-type, cookie]
+Date: [Fri, 15 Jul 2016 08:45:16 GMT]
+Access-Control-Allow-Origin: [*]
+Keep-Alive: [timeout=5, max=100]
+Via: [1.1 sugarcrm.tsrv.ebuero.de]
+Content-Type: [application/json]
+
+{"access_token":"2d5610e1-e6d2-811b-d6ec-5788a24dd76e","expires_in":3600,"token_type":"bearer","scope":null,"refresh_token":"2e7028e6-4dd0-c246-7327-5788a2a6a371","refresh_expires_in":1209600,"download_token":"302f3045-122f-666c-dfa8-5788a2db7d4c"}

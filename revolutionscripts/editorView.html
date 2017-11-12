@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="panel-body">
+    <div class="form-group">
+        <label>Name:</label>
+        <input class="form-control" ng-model="currentProduct.name" />
+    </div>
+    <div class="form-group">
+        <label>Category:</label>
+        <input class="form-control" ng-model="currentProduct.category" />
+    </div>
+    <div class="form-group">
+        <label>Price:</label>
+        <input class="form-control" ng-model="currentProduct.price" />
+    </div>
+    <button class="btn btn-primary" ng-click="saveEdit(currentProduct)">Save</button>
+    <button class="btn btn-primary" ng-click="cancelEdit()">Cancel</button>
+</div>

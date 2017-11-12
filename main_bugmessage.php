@@ -1,0 +1,2 @@
+<?php
+echo "MAIN WINDOW FOR BUG MESSAGES";

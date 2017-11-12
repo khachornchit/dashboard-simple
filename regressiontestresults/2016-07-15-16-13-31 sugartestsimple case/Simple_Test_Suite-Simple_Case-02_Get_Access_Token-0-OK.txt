@@ -1,0 +1,7 @@
+Status: OK
+Time Taken: 262
+Size: 0
+Timestamp: Fri Jul 15 16:13:39 ICT 2016
+TestStep: 02. Get Access Token
+
+----------------- Messages ------------------------------
